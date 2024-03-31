@@ -1,3 +1,4 @@
+//method to convert temp into fahrenheit
 const toFahrenheit = (inputTemp, inputTempType) => {
   let fahrenheit;
   let tempCelsius;
@@ -37,6 +38,7 @@ const toCelsius = (inputTemp, inputTempType) => {
   }
 };
 
+//method to convert temp into kelvin
 const toKelvin = (inputTemp, inputTempType) => {
   let kelvin;
   switch (inputTempType) {
@@ -61,7 +63,7 @@ const tempConverter = (inputTemp, inputTempType, outputTempType) => {
   const outputResult = document.getElementById("outputResult");
 
   if (inputTemp == "") {
-    alert("Enter degree first to convert");
+    alert("Enter DEGREE first to CONVERT");
   } else {
     let tempResult;
     switch (outputTempType) {
